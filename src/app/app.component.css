@@ -1,0 +1,17 @@
+nav a {
+    padding: 1rem;
+    text-decoration: none;
+    margin: 10px 5px;
+    display: inline-block;
+    background-color: #1976d2;
+    color: white;
+    border-radius: 4px;
+}
+nav a:hover {
+    color: white;
+    background-color: #0a2b4d;
+}
+
+nav a.active {
+    background-color: black;
+}

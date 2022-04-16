@@ -17,4 +17,18 @@ export class HeroService {
     this.messageService.add('HeroService: fetched heroes');
     return heroes;
   }
+
+  getHero(id: number): Observable<Hero> {
+    const hero = HEROES.find(h => h.id === id)!;
+    this.messageService.add(`HeroService: fetched hero id=${id}`);
+    return of(hero).pipe(delay(750));
+  }
+
+  setHeroAlive(hero: Hero, alive: boolean):Hero {
+    hero.alive = alive;
+    hero.alive
+      ? this.messageService.add(`HeroService: hero id=${hero.id} is now back from the dead !`)
+      : this.messageService.add(`HeroService: hero id=${hero.id} is now dead !`);
+    return hero;
+  }
 }

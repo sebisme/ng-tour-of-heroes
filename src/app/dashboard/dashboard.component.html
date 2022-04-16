@@ -1,0 +1,6 @@
+<h2>Top of Heroes</h2>
+<div class="heroes-menu">
+    <a *ngFor="let hero of heroes" title="Force: {{hero.force}}" routerLink="/hero/{{hero.id}}">
+        {{ hero.name }} 
+    </a>
+</div>

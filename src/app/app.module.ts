@@ -7,6 +7,8 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { YesNoPipe } from './yes-no.pipe';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +16,14 @@ import { MessagesComponent } from './messages/messages.component';
     HeroesComponent,
     YesNoPipe,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
