@@ -1,8 +1,33 @@
 <h2>Our Heroes</h2>
+<div>
+    <div>
+        <label for="new-hero-name">Hero name: </label>
+        <input id="new-hero-name" #heroName />
+    </div>
+    <!--
+    <div>
+        <label for="new-hero-force">Hero force: </label>
+        <input id="new-hero-force" #heroForce type="number"/>
+    </div>
+    <div>
+        <label for="new-hero-alive">Is Alive: </label> 
+        <input id="new-hero-alive" type="checkbox" #heroAlive />
+    </div>
+    <button type="button" class="add-button" (click)="add(heroName.value, int(heroForce.value), heroAlive.value); heroName.value=''; heroForce.value=''; heroAlive.value=''">
+        Add Hero
+    </button>
+    -->
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
+        Add Hero
+    </button>
+    
+</div>
 <ul *ngFor="let hero of heroes">
     <li>
         <a routerLink="/hero/{{hero.id}}">
             <span class="badge">{{ hero.id }}</span> {{hero.name}}
         </a>
+        <button type="button" class="delete" title="delete hero" (click)="delete(hero)">x</button>
     </li>
 </ul>

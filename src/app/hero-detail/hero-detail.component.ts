@@ -31,11 +31,18 @@ export class HeroDetailComponent implements OnInit {
 
   public onSaveHeroAlive(value: boolean): void {
     if (this.hero) {
-      this.hero = this.heroService.setHeroAlive(this.hero, !value);
+      this.heroService.setHeroAlive(this.hero, !value);
     }
   }
 
   public goBack(): void {
     this.location.back();
+  }
+
+  public save(): void {
+    if (this.hero) {
+      this.heroService.updateHero(this.hero)
+        .subscribe(() => this.goBack());
+    }
   }
 }
