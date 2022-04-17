@@ -1,23 +1,15 @@
 /* App-wide styles */
 h1 {
     color: #1976d2;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 250%;
+    font-family: Roboto, Helvetica, sans-serif;
+    
+    text-align: center;
 }
 
 h2, h3 {
     color: #1976d2  ;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, Helvetica, sans-serif;
     font-weight: lighter;
-}
-
-body {
-    margin: 2em;
-}
-
-body, input[type="text"], button {
-    color: #1976d2;
-    font-family: Cambria, Georgia, serif;
 }
 
 button {
@@ -48,3 +40,5 @@ button:disabled {
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

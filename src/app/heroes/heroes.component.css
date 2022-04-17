@@ -1,7 +1,7 @@
 ul {
    list-style: none; 
 }
-
+/*
 ul li span.badge {
     display: inline-flex;
     border-radius: 20px;
@@ -14,36 +14,14 @@ ul li span.badge {
     line-height: 50%;
     margin-right: 10px;
 }
-
+*/
 button.selected {
     background-color: #0c2b4a;
 }
 
 a, a:link, a:visited {
-    
-    background-color: #1976d2;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    color: white;
-    font-size: 1rem;
-    padding: 0.65rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    text-decoration: none;
-    line-height: 200%;
 
-    /* flexbox */
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: flex-start;
-    align-items: flex-start;
 }
 
 a:active, a:hover {
-    background-color: #0a2b4d;
-    color: white;
 }
